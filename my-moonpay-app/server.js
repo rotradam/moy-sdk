@@ -1,4 +1,4 @@
-// server.js (This is a Node.js backend file, should be at the root of your backend, not inside the React src directory)
+// server.js
 import express from 'express';
 import { MoonPay } from '@moonpay/moonpay-node';
 
@@ -11,5 +11,5 @@ app.get('/api/sign', (req, res) => {
   res.json({ signature });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

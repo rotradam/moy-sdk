@@ -1,7 +1,8 @@
 // src/App.js
 import React, { useState } from 'react';
 import { MoonPayProvider } from '@moonpay/moonpay-react';
-import MoonPayWidget from './MoonPayWidget';
+import MoonPayWidget from './MoonPayWidget.js';
+
 
 function App() {
   const [visible, setVisible] = useState(true);
